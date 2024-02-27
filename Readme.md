@@ -54,7 +54,7 @@ please ensure REDIS and RABBITMQ Is Installed on your Local Machine, to avoid er
 
 where BASE_URL is <code> http://127.0.0.1:8000/</code>
 
-### CREATING SUPER USER
+### CREATING SUPER USER AND GROUPS
 ```
     python manage.py createsuperuser
 ```
@@ -74,3 +74,10 @@ others
 >[!NOTE]
 
 Please always append "/" at the end of all route to avoid a 404 Error
+
+### USING ACCESS TOKEN IN SWAGGER UI
+```
+    Append Bearer before using the token on the swagger authorize Button i.e. it shoule follow the order with the white space
+
+    Bearer TokenExample
+```
